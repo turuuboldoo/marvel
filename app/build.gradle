@@ -9,12 +9,12 @@ plugins {
 
 android {
     namespace 'mn.turbo.marvel'
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         applicationId "mn.turbo.marvel"
         minSdk 26
-        targetSdkVersion 34
+        targetSdkVersion 35
         versionCode 1
         versionName "0.0.1"
 
@@ -47,12 +47,12 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.core:core-ktx:1.15.0'
+    implementation 'androidx.core:core-ktx:1.16.0'
 
     // compose
-    implementation platform('androidx.compose:compose-bom:2025.02.00')
+    implementation platform('androidx.compose:compose-bom:2025.04.01')
     // Integration with activities
-    implementation 'androidx.activity:activity-compose:1.10.0'
+    implementation 'androidx.activity:activity-compose:1.10.1'
     // Integration with ViewModels
     implementation 'androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7'
     // input and measurement/layout
@@ -60,18 +60,18 @@ dependencies {
     // Android Studio Preview support
     implementation 'androidx.compose.ui:ui-tooling-preview'
     // Material Design
-    implementation 'androidx.compose.material:material:1.7.8'
+    implementation 'androidx.compose.material:material:1.8.0'
     // Material design icons
     implementation 'androidx.compose.material:material-icons-core:1.7.8'
     implementation 'androidx.compose.material:material-icons-extended:1.7.8'
 
     // navigation
-    implementation "androidx.navigation:navigation-ui-ktx:2.8.7"
-    implementation "androidx.navigation:navigation-fragment-ktx:2.8.7"
-    implementation "androidx.navigation:navigation-compose:2.8.7"
+    implementation "androidx.navigation:navigation-ui-ktx:2.8.9"
+    implementation "androidx.navigation:navigation-fragment-ktx:2.8.9"
+    implementation "androidx.navigation:navigation-compose:2.8.9"
 
     // coroutine
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.1'
 
     // view model
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.8.7"
@@ -85,15 +85,15 @@ dependencies {
     implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.11'
 
     // room
-    implementation "androidx.room:room-ktx:2.6.1"
-    implementation "androidx.room:room-paging:2.6.1"
-    implementation "androidx.room:room-runtime:2.6.1"
-    ksp "androidx.room:room-compiler:2.6.1"
+    implementation "androidx.room:room-ktx:2.7.1"
+    implementation "androidx.room:room-paging:2.7.1"
+    implementation "androidx.room:room-runtime:2.7.1"
+    ksp "androidx.room:room-compiler:2.7.1"
 
     // dagger
     implementation 'androidx.hilt:hilt-navigation-compose:1.2.0'
-    implementation 'com.google.dagger:hilt-android:2.49'
-    ksp 'com.google.dagger:hilt-compiler:2.49'
+    implementation 'com.google.dagger:hilt-android:2.56.2'
+    ksp 'com.google.dagger:hilt-compiler:2.56.2'
 
     // coil image
     implementation 'io.coil-kt:coil-compose:2.5.0'
