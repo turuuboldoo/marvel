@@ -1,6 +1,7 @@
 package mn.turbo.marvel.presenter.video
 
 import android.annotation.SuppressLint
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.webkit.WebChromeClient
 import android.webkit.WebSettings
@@ -12,9 +13,11 @@ import mn.turbo.marvel.databinding.ActivityTrailerBinding
 @AndroidEntryPoint
 class TrailerActivity : AppCompatActivity() {
 
-    @SuppressLint("SetJavaScriptEnabled")
+    @SuppressLint("SetJavaScriptEnabled", "SourceLockedOrientationActivity")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
+
         val binding = ActivityTrailerBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
